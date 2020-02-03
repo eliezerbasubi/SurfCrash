@@ -1,0 +1,145 @@
+.body{
+    height: 100%;
+}
+
+/* Top Nav Bar */
+.navigation__drawer{
+    padding: 0 40px;
+    line-height: 100px;
+    text-align: right;
+    background-color: seagreen;
+}
+
+.navigation__drawer .appName  {
+    float: left;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.navigation__drawer .navBar ul li{
+    display: inline-block;
+    list-style-type: none;
+    color: white;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+.navigation__drawer .mobileNavBar {
+    display: none;
+}
+.toggle__menu {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Hero Image */
+.hero {
+    height: 60vh;
+    background:  url('../../assets/images/bg.jpg') center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero__text{
+    background-color: seagreen;
+    margin-bottom: .8rem;
+    padding: 1rem 2rem;
+    width: 30%;
+    color: #ffffff;
+    position: relative;
+    bottom: -50%;
+    border-top-right-radius: 30px;
+}
+
+.hero__text:nth-child(2) {
+    margin-left: 3rem;
+}
+.hero__text:nth-child(3) {
+    margin-left: 6rem;
+}
+
+/* Information - about us*/
+.about{
+    margin: 2rem 0;
+    padding: 0 40px;
+    height: 100%;
+}
+.about__text{
+    text-align: center;
+}
+
+
+/* Recently added friends */
+.team{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.team__members {
+    display: inline-flex;
+}
+
+.team__members--person {
+    padding: 2em;
+}
+
+.team__members--person__image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px solid seagreen;
+}
+
+/* Footer Style */
+.footer{
+    width: 100%;
+    padding: 2rem;
+    line-height: 60px;
+    background-color: seagreen;
+    color: #ffffff;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.footer > nav .navBar ul li{
+    display: inline;
+    padding: 0 .9em;
+    list-style-type: none;
+}
+
+.footer > .copyright{
+    line-height: 60px;
+}
+
+/* ************ MEDIA QUERIES *********** */
+@media only screen and (max-width: 768px) {
+    .navigation__drawer .mobileNavBar {
+        display: block;
+        color: #ffffff;
+    }
+    .navigation__drawer .navBar {
+        display: none;
+    }
+    .navigation__drawer .navBar ul li {
+        display: block;
+    }
+    .navigation__drawer .navBar li {
+        padding: 0;
+    }
+    .navigation__drawer .navBar li {
+        line-height: 30px;
+    }
+    .hero__text {
+        width: 50%;
+    }
+    .team__members {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .team__members--person {
+        padding: .6rem;
+    }
+} 

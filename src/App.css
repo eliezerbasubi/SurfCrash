@@ -1,0 +1,54 @@
+.App {
+  font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+  font-weight: 200;
+  width: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  font-weight: 400;
+}
+body{
+  width: 100%;
+  height: 100%;
+}
+/* Globals */
+.mb-12 {
+  margin-bottom: 1rem;
+}
+.link__item {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
+
+.current::before {
+  content: "[";
+  color: #fff !important;
+  padding: 5px;
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  -o-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+.current::after{
+  content: "]";
+  padding: 5px;
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -o-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.current:hover::after{
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+}
